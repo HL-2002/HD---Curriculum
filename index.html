@@ -8,6 +8,7 @@
 		<meta charset="UTF-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Mega|Roboto|Roboto+Condensed">
         <link rel="stylesheet" href="curriculum.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 
 	<body>
@@ -51,7 +52,7 @@
     	<h2> experiencia </h2>
     	<div class="display">
     		<div class="box">
-    			<div align="center"><img src="multimedia/mocanu.jpg" width="101" height="108" align="center" style="background-image: linear-gradient(to bottom, #ffffff, #ffffff);"> </img> </div>
+    			<div align="center"><img src="multimedia/mocanu.jpg" width="101" height="108" align="center" style="background-color: #ffffff;"> </img> </div>
 				<h3><a target="_blank" href="https://www.instagram.com/mocanu2020/?hl=es" title="Modelo Calasancio de las Naciones Unidas"> mocanu </a></h3>
 				<h4 title="Secretario Académico y Secretario General"> SA y SG de las XIII y XIV Ediciones </h4>
 				<p> Encargado de la gestión y desarrollo del área académica en la XIII edición, logrando un nivel académico a la altura de los participantes. </p>
@@ -95,24 +96,74 @@
     	</div>
     	<div id="institución">
     		<div align="center"><img src="multimedia/unitec.jpg" width="125" height="125" style="padding-left: 3px; padding-right: 3px; border-bottom-left-radius: 60px; border-bottom-right-radius: 60px"></div>
-    		<h3> UNITEC </h3>
-    		<h4 width="25%"> Universidad Tecnológica del Centro </h4>
+    		<h3> Universidad Tecnológica del Centro </h3>
+    		<h4 width="25%"> Ingeniería Informática </h4>
     		<div align="center" style="padding-bottom: 10px;">
     			<label> Progreso en la carrera </label>
     			<progress max="100" value="5"> 5% </progress>
     		</div>
     	</div>
     </div>
+    <br><br>
 
     <!-- Sección Contacto (Footer)-->
     <div class="footer" id="contacto">
     	<h3> contacto </h3>
     	<ul id="redes">
-    		<li id="instagram"> <a href="https://www.instagram.com/henryslang/" target="_blank"> Instagram </a></li>
-    		<li id="email"> <a href="mailto:henryslang8231682@gmail.com?subject=Sobre%20tu%20currículum"> Email me</a></li>
-    	</ul> 
-    	<p> Henry Lang© 2021 </p>
+    	<li id="instagram"> <a href="https://www.instagram.com/henryslang/" target="_blank"> Instagram </a></li>
+    	<li id="email"> <a href="mailto:henryslang8231682@gmail.com?subject=Sobre%20tu%20currículum"> Email me</a></li>
+    	</ul>
     </div>
 
+    <button onclick="topFunction()" id="arrow"><img src="Multimedia/arrow.png" alt="Top">
+    </button>
+
+    <script>
+        // JavaScript
+
+        (function(){
+            // Actualizar el año
+            var year = new Date().getFullYear();
+
+            function updateYear() {
+                var p = document.createElement('p');
+                var ptext = document.createTextNode("Henry Lang© " + year);
+                p.appendChild(ptext);
+                document.getElementById('contacto').appendChild(p);            
+            }
+            updateYear(year);
+
+            // Revelar la página progresivamente
+            ScrollReveal().reveal('.header', {delay: 200});
+            ScrollReveal().reveal('.menu', {delay: 300});
+            ScrollReveal().reveal('#yo', {delay: 400});
+            ScrollReveal().reveal('#experiencia', {delay: 400});
+            ScrollReveal().reveal('#habilidades', {delay: 400});
+            ScrollReveal().reveal('#educación', {delay: 400});
+            ScrollReveal().reveal('#contacto', {delay: 400});
+
+            // Flecha para volver a arriba de la página
+            arrow = document.getElementById('arrow');
+
+            // Aparaciónn de la flecha
+            window.onscroll = function() {show()};
+
+            function show() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    arrow.style.display = "block";
+                } else {
+                    arrow.style.display = "none";
+                }
+            }
+
+        })()
+
+        // Volver Arriba al hacer Click en la flecha
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    </body>
 
 </html>

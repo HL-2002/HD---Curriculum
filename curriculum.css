@@ -1,247 +1,273 @@
-        /* Estilo Encabezado */
-        .header img {
-        	box-shadow: 0 6px 20px 0 #9B9B9B, 0 2px 4px #6B6B6B;
-        }
+  /* Estilo Encabezado */
+  .header img {
+    box-shadow: 0 6px 20px 0 #9B9B9B, 0 2px 4px #6B6B6B;
+  }
         
-        h1 {
-            font-family: "lexend mega";
-            text-transform: uppercase;
-            font-size: 350%;
-  			text-shadow: 0 2px 5px #9B9B9B;
-  			padding: 10px;
-        	margin: 0px;
-        }
+  h1 {
+    font-family: "lexend mega";
+    text-transform: uppercase;
+    font-size: 350%;
+  	text-shadow: 0 2px 5px #9B9B9B;
+  	padding: 10px;
+    margin: 0px;
+  }
         
-        .header p, .header strong {
-        	padding:0px;
-        	margin: 0px;
-        	font-family: "lexend mega";
-        	font-size: 200%;
-        	letter-spacing: -0.2rem;
-  			text-shadow: 0 2px 5px #9B9B9B;
-        }
+  .header p, .header strong {
+    padding:0px;
+    margin: 0px;
+    font-family: "lexend mega";
+    font-size: 200%;
+    letter-spacing: -0.2rem;
+  	text-shadow: 0 2px 5px #9B9B9B;
+  }
         
-		.header strong {
-  			overflow: hidden;
-  			display: inline-block;
-  			height: 2.5rem;
-  			width: 100%;
-		}
+	.header strong {
+  	overflow: hidden;
+  	display: inline-block;
+  	height: 2.55rem;
+  	width: 100%;
+	}
         
-		.header .scroll:hover {
-  			color: #3569F5;
-  			position: relative;
+	.header .scroll:hover{
+  	color: #3569F5;
+  	position: relative;
             
-			/*animación*/
-        	animation: move 5s;
-        	animation-iteration-count: 3;
-        	animation-delay: 1s;
-		}
+		/*animación*/
+    animation: move 5s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+	}
 
-		@keyframes move {
-    		0%  { top: 0px; }
-    		25% { top: -40px; }
-    		50% { top: -80px; }
-    		75% { top: -120px; }
-    	}
+	@keyframes move {
+    0%  { top: 0px; }
+    25% { top: -40px; }
+    50% { top: -80px; }
+    75% { top: -120px; }
+    100% { top: 0px; }
+  }
 
-    	/* Estilo Menú */
-    	.menu {
-    		text-align: center;
-    		position: relative;
-    		left: 5%;
-    		width: 90%;
-    		border-radius: 100px;
-    		border: 2px solid #002279;
-    		border-top-color: #4477F9;
-    		border-left: hidden;
-    		border-right: hidden;
-    		background-image: linear-gradient(to bottom, #3569F5, #002B9E);
-    		text-shadow: 0 2px 5px #002279;
-    	}
+  /* Estilo Menú */
+  .menu {
+    text-align: center;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    border-radius: 100px;
+    border: 2px solid #002279;
+    border-top-color: #4477F9;
+    border-left: hidden;
+    border-right: hidden;
+    background-image: linear-gradient(to bottom, #3569F5, #002B9E);
+    text-shadow: 0 2px 5px #002279;
+  }
 
-    	.menu li {
-    		list-style-type: none;
-    		display: inline;
-    		padding-left: 2%;
-    		padding-right: 2%;
-    		padding-top: 0%;
-    		padding-bottom: 0%;
-    	}
-    	.menu a {
-    		font-family: "lexend mega";
-    		font-size: 180%;
-    		text-transform: uppercase;
-    		letter-spacing: -0.2rem;
-    		color: white;
-    		text-decoration: none;
-    	}
+  .menu li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 
-    	.menu a:hover {
-    		text-shadow: 0 3px 5px #00081E;
-    		font-size: 200%;
-    	}
+  .menu a {
+    font-family: "lexend mega";
+    font-size: 180%;
+    text-transform: uppercase;
+    letter-spacing: -0.2rem;
+    color: white;
+    text-decoration: none;
+    transition: font-size 1s;
+  }
 
-    	.menu a:active {
-    		color: #002B9E;
-    		font-size: 200%;
-    		text-shadow: 0 -3px 5px #3569F5;
-    	}
+  .menu a:hover {
+    text-shadow: 0 3px 5px #00081E;
+    font-size: 200%;
+  }
 
-    	/* Estilo Contenido*/
-    	.container {
-       		margin: 0px;
-       		clear: none;
-       		text-align: center;
-       	}
+  .menu a:active {
+    color: #002B9E;
+    font-size: 200%;
+    text-shadow: 0 -3px 5px #3569F5;
+  }
 
-      	.container h2 {
-           	font-family: "lexend mega";
-           	text-transform: uppercase;
-           	font-size: 250%;
- 			text-shadow: 0 2px 5px #9B9B9B;
-  			top: 0%;
-  			position: sticky;
-  			background-color: #ffffff;
-  			border-bottom: 2px solid #9B9B9B;
-  			box-shadow: 0 6px 4px #6B6B6B, 0 8px 8px #9B9B9B;
-  			line-height: 140%;
-  			z-index: 2;
-       	}
+  /* Estilo Contenido*/
+  .container {
+    margin: 0px;
+    clear: none;
+    text-align: center;
+  }
 
-       	.container p {
-       		font-size: 100%;
-       		font-family: "roboto condensed";
-       		padding-left: 5%;
-       		padding-right: 5%;
-       		line-height: 150%;
-       	}
+  .container h2 {
+    font-family: "lexend mega";
+    text-transform: uppercase;
+    font-size: 250%;
+ 		text-shadow: 0 2px 5px #9B9B9B;
+  	top: 0%;
+  	position: sticky;
+  	background-color: #ffffff;
+  	border-bottom: 2px solid #9B9B9B;
+  	box-shadow: 0 6px 4px #6B6B6B, 0 8px 8px #9B9B9B;
+  	line-height: 140%;
+  	z-index: 2;
+  }
 
-       	.display {
-       		width: 95%;
-       		position: relative;
-       		left: 2.5%;
-       		display: flex;
-       		justify-content: space-around;
-       		flex: 1;
-       	}
+  .container p {
+    font-size: 100%;
+    font-family: "roboto condensed";
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 150%;
+  }
+
+  .display {
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+  }
        	
-       	.box {
-       		width: 41.5%;
-       		padding: 1%;
-       		border-radius: 30px;
-       		box-shadow: 0 0px 12px #9B9B9B;
-       		background-image: linear-gradient(to bottom, #3569F5, #002B9E);
-       		color: white;
-       	}
+  .box {
+    width: 41.5%;
+    padding: 1%;
+    border-radius: 30px;
+    box-shadow: 0 0px 12px #9B9B9B;
+    background-image: linear-gradient(to bottom, #3569F5, #002B9E);
+    color: white;
+    transition: width 1s, height 1s;
+  }
 
-       	.container h3 {
-       		text-align: center;
-           	font-family: "lexend mega";
-           	text-transform: uppercase;
-           	font-size: 180%;
-  			text-shadow: 0 2px 5px #9B9B9B;
-        }
+  .box:hover {
+    width: 50%;
+  }
 
-       	.box a {
-       		text-decoration: none;
-      		color: white;
-        }
+  .container h3 {
+    text-align: center;
+    font-family: "lexend mega";
+    text-transform: uppercase;
+    font-size: 180%;
+  	text-shadow: 0 2px 5px #9B9B9B;
+  }
 
-        .box a:hover {
-       		text-decoration: underline;
-       	}
+  .box a {
+    text-decoration: none;
+    color: white;
+  }
 
-       	.box h3 {
-  			text-shadow: 0 2px 5px #002279;
-       	}
+  .box a:hover {
+    text-decoration: underline;
+  }
 
-       	.container h4 {
-       		text-align: center;
-           	font-family: "lexend mega";
-           	font-size: 150%;
-       	}
+  .box h3 {
+  	text-shadow: 0 2px 5px #002279;
+  }
 
-       	.box img {
-       		border-radius: 20px;
-       		box-shadow: 0 2px 5px 0 #002279;
-       		padding: 10px;
-       	}
+  .container h4 {
+    text-align: center;
+    font-family: "lexend mega";
+    font-size: 150%;
+  }
 
-       	.container li {
-       		font-family: "roboto";
-       		font-size: 100%;
-       		text-align: center;
-       		list-style-position: inside;
-       		line-height: 150%;
-       	}
+  .box img {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #002279;
+    padding: 10px;
+  }
 
-       	.container strong {
-       		color: #3569F5;
-       		font-size: 110%;
-       	}
+  .container li {
+    font-family: "roboto";
+    font-size: 100%;
+    text-align: center;
+    list-style-position: inside;
+    line-height: 150%;
+  }
 
-       	#institución {
-       		margin-top: 50px;
-       	}
+  .container strong {
+    color: #3569F5;
+    font-size: 110%;
+  }
 
-       	#institución img {
-       		box-shadow: 0 2px 5px 0 #9B9B9B;
-       		padding: 10px;
-       	}
+  #institución {
+    margin-top: 50px;
+  }
 
-       	#institución label {
-       		text-align: center;
-           	font-family: "roboto";
-           	font-size: 100%;
-       	}
+  #institución img {
+    box-shadow: 0 2px 5px 0 #9B9B9B;
+    padding: 10px;
+  }
 
-       	/* Estilo Footer*/
-        .footer {
-        	background-image: linear-gradient(to bottom, #3569F5, #002B9E);
-        	padding: 5px;
-        	margin: 0px;
-        }
+  #institución label {
+    text-align: center;
+    font-family: "roboto";
+    font-size: 100%;
+  }
 
-        .footer h3 {
-       		text-align: center;
-           	font-family: "lexend mega";
-           	text-transform: uppercase;
-           	color: white;
-           	font-size: 140%;
-  			text-shadow: 0 2px 5px #002B9E;
-        }
+  /* Estilo Footer*/
+  .footer {
+    background-image: linear-gradient(to bottom, #3569F5, #002B9E);
+    padding: 5px;
+    margin: 0px;
+  }
 
-        #redes {
-        	list-style-position: inside;
-        	font-family: "roboto";
-        	text-align: center;
+  .footer h3 {
+    text-align: center;
+    font-family: "lexend mega";
+    text-transform: uppercase;
+    color: white;
+    font-size: 140%;
+  	text-shadow: 0 2px 5px #002B9E;
+  }
 
-        }
+  #redes {
+    list-style-position: inside;
+    font-family: "roboto";
+    text-align: center;
+  }
 
-        #redes a {
-       		text-decoration: none;
-      		color: white;
-       	}
+  #redes a {
+    text-decoration: none;
+    color: white;
+  }
 
-        #redes a:hover {
-       		text-decoration: underline;
-       	}
+  #redes a:hover {
+    text-decoration: underline;
+  }
 
-        #instagram{
-        	list-style-image: url("multimedia/instagram.png");
-        }
+  #instagram{
+    list-style-image: url("multimedia/instagram.png");
+  }
 
-        #email {
-			list-style-image: url("multimedia/mail.png");
-        }
+  #email {
+	  list-style-image: url("multimedia/mail.png");
+  }
 
-        .footer p {
-        	text-align: center;
-       		font-family: "roboto condensed";
-       		color: white;
-       		text-shadow: 0 2px 5px #002B9E;
-        }       	
+  .footer p {
+    text-align: center;
+ 		font-family: "roboto condensed";
+    color: white;
+    text-shadow: 0 2px 5px #002B9E;
+  }
+
+  #arrow {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    background-color: rgb(16,16,16);
+    padding: 10px;
+    border-radius: 5px;
+    transition: bottom 1s;
+    cursor: pointer;
+  } 	
+
+  #arrow:hover {
+    bottom: 30px;
+  }   
 
 }
 
